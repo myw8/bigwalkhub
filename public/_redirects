@@ -1,0 +1,2 @@
+# Keep the conventional sitemap.xml URL compatible with Astro's sitemap index.
+/sitemap.xml /sitemap-index.xml 301
