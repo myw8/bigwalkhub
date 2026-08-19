@@ -1,0 +1,60 @@
+{
+  "$schema": "../../docs/home.schema.json",
+  "site": {
+    "name": "Big Walk Hub Wiki",
+    "shortName": "Big Walk Hub",
+    "description": "Complete Big Walk Wiki featuring walkthroughs, puzzle solutions, maps, achievements, trophies, multiplayer guides, crossplay information and everything you need.",
+    "tagline": "The Ultimate Big Walk Wiki & Guide",
+    "legalNotice": "Big Walk Hub Wiki is a fan-made community site. Not affiliated with or endorsed by the game developer."
+  },
+  "nav": {
+    "home": "Home", "guides": "Guides", "walkthrough": "Walkthrough", "puzzles": "Puzzles", "map": "Map", "achievements": "Achievements", "trophies": "Trophies", "platforms": "Platforms", "multiplayer": "Multiplayer", "crossplay": "Crossplay", "items": "Items", "endings": "Endings", "faq": "FAQ", "more": "More", "toggleTheme": "Toggle theme", "menu": "Menu", "close": "Close", "search": "Search", "language": "Language"
+  },
+  "search": { "placeholder": "Search Big Walk guides...", "noResults": "No matches found" },
+  "shared": {
+    "lastUpdated": "Last updated", "publishedOn": "Published", "noArticles": "No articles yet. Check back soon!", "relatedArticles": "Related Guides", "onThisPage": "Guide Contents", "browseAll": "Browse all", "viewAll": "View all", "commentsHeading": "Comments", "share": "Share", "copyLink": "Copy link", "copied": "Copied!", "consentText": "We use cookies for analytics and ads to keep this wiki free.", "accept": "Accept", "decline": "Decline", "consentTitle": "Cookies", "possiblyOutdated": "This guide was last checked on", "outdatedNote": "— official information may have changed since.", "prevArticle": "Previous", "nextArticle": "Next", "minuteRead": "min read", "wasThisHelpful": "Was this helpful?", "feedbackThanks": "Thanks for the feedback!", "relatedVideos": "Related videos", "gallery": "Gallery", "gameVersion": "Game version", "allTags": "All Tags", "tagsIndexDescription": "Browse all Big Walk topics.", "articlesCount": "articles", "recentTitle": "Latest Updates", "recentDescription": "The latest Big Walk guides and updates, newest first.", "sponsorTitle": "Support this wiki", "sponsorText": "If these guides helped you, consider supporting the site.", "sponsorButton": "Support us", "notFoundSearchHint": "Try searching the wiki instead.", "notFoundPopular": "Popular pages", "quickAnswer": "Quick Answer", "skipToContent": "Skip to content", "tapToCopy": "Tap to copy", "open": "Open", "playVideo": "Play video", "closeAd": "Close ad", "fallbackNotice": "English fallback", "copyQuickAnswer": "Copy quick answer", "feedbackYes": "Yes", "feedbackNo": "No", "breadcrumbAria": "Breadcrumb", "paginationAria": "Guide pagination",
+    "galleryLabels": { "close": "Close", "prev": "Previous image", "next": "Next image" }
+  },
+  "overview": {
+    "guides": { "overviewTitle": "Big Walk Guides", "overviewDescription": "Practical Big Walk guides, tips, and explanations for every stage of your journey." },
+    "walkthrough": { "overviewTitle": "Big Walk Walkthrough", "overviewDescription": "Complete Big Walk walkthroughs with route guidance and progression notes." },
+    "puzzles": { "overviewTitle": "Big Walk Puzzle Solutions", "overviewDescription": "Puzzle solutions, clues, and spoiler-aware explanations for Big Walk." },
+    "map": { "overviewTitle": "Big Walk Map", "overviewDescription": "Big Walk map references, locations, routes, and points of interest." },
+    "achievements": { "overviewTitle": "Big Walk Achievements", "overviewDescription": "Big Walk achievement requirements, unlock paths, and completion planning." },
+    "trophies": { "overviewTitle": "Big Walk Trophies", "overviewDescription": "Big Walk trophy guides and console completion information." },
+    "platforms": { "overviewTitle": "Big Walk Platforms", "overviewDescription": "Big Walk platform guides for PC, PS5, and Switch 2." },
+    "multiplayer": { "overviewTitle": "Big Walk Multiplayer", "overviewDescription": "Big Walk co-op and multiplayer setup guides for groups of players." },
+    "crossplay": { "overviewTitle": "Big Walk Crossplay", "overviewDescription": "Big Walk cross-platform and crossplay compatibility information." },
+    "items": { "overviewTitle": "Big Walk Items", "overviewDescription": "Big Walk item references, uses, locations, and collection guidance." },
+    "endings": { "overviewTitle": "Big Walk Endings", "overviewDescription": "Big Walk ending explanations and spoiler-labelled analysis." },
+    "faq": { "overviewTitle": "Big Walk FAQ", "overviewDescription": "Answers to common Big Walk questions for new and returning players." }
+  },
+  "home": {
+    "meta": { "title": "Big Walk Hub Wiki - Big Walk Guides, Maps, Walkthrough & More", "description": "Complete Big Walk Wiki featuring walkthroughs, puzzle solutions, maps, achievements, trophies, multiplayer guides, crossplay information and everything you need." },
+    "hero": { "badge": "Independent guide for House House's co-op adventure", "title": "Big Walk Hub Wiki", "description": "Routes, puzzles, multiplayer setup, crossplay, platforms, and completion notes for a 2-12 player trip.", "ctaPrimary": "Start the walkthrough", "ctaSecondary": "Check crossplay", "videoId": "" },
+    "updates": { "title": "Latest Updates" },
+    "start": { "badge": "Start Here", "title": "Find Your Big Walk Guide", "cards": [
+      { "number": "01", "title": "Complete Walkthrough", "description": "Follow the main route with spoiler-aware checkpoints and progression help.", "icon": "lucide:route", "href": "/walkthrough/big-walk-walkthrough" },
+      { "number": "02", "title": "Multiplayer Guide", "description": "Plan a co-op session and understand the player experience.", "icon": "lucide:users", "href": "/multiplayer/big-walk-multiplayer" },
+      { "number": "03", "title": "Map Guide", "description": "Use map references to orient your group and find key routes.", "icon": "lucide:map", "href": "/map/big-walk-map" },
+      { "number": "04", "title": "Achievements", "description": "Build a clean completion plan for achievements and trophies.", "icon": "lucide:medal", "href": "/achievements/big-walk-achievements" }
+    ] },
+    "popular": { "badge": "Popular Guides", "title": "Most Read", "quickLinks": [
+      { "label": "Is Big Walk Cross Platform?", "href": "/crossplay/is-big-walk-cross-platform" }, { "label": "Big Walk PS5 Guide", "href": "/platforms/ps5" }, { "label": "Big Walk Multiplayer Guide", "href": "/multiplayer/big-walk-multiplayer" }, { "label": "Big Walk Walkthrough", "href": "/walkthrough/big-walk-walkthrough" }, { "label": "Big Walk Map", "href": "/map/big-walk-map" }, { "label": "Big Walk Achievements", "href": "/achievements/big-walk-achievements" }, { "label": "Big Walk Ending Explained", "href": "/endings" }
+    ] },
+    "explore": { "title": "Wiki Categories", "description": "Browse Big Walk information by the question you need answered.", "modules": [
+      { "order": 1, "name": "Guides", "description": "General tips and practical advice.", "href": "/guides", "displayType": "labeled-cards", "highlights": [{ "label": "Getting started", "detail": "Core systems and useful habits" }] },
+      { "order": 2, "name": "Walkthrough", "description": "A complete route through Big Walk.", "href": "/walkthrough", "displayType": "labeled-cards", "highlights": [{ "label": "Main route", "detail": "Progression and checkpoints" }] },
+      { "order": 3, "name": "Maps & Puzzles", "description": "Location references and puzzle solutions.", "href": "/map", "displayType": "labeled-cards", "highlights": [{ "label": "Map", "detail": "Routes and places of interest" }, { "label": "Puzzles", "detail": "Spoiler-aware solutions" }] },
+      { "order": 4, "name": "Achievements", "description": "Completion and unlock planning.", "href": "/achievements", "displayType": "labeled-cards", "highlights": [{ "label": "Achievements", "detail": "Requirements and difficulty" }, { "label": "Multiplayer", "detail": "Co-op and crossplay" }] }
+    ] },
+    "faq": { "title": "Big Walk FAQ", "description": "Common questions about Big Walk multiplayer, crossplay, platforms, and hosting.", "items": [
+      { "question": "Does Big Walk support crossplay?", "answer": "Yes. The official FAQ confirms that players on different systems can play together across Windows, Mac, PlayStation 5, and Nintendo Switch 2." },
+      { "question": "How do I join a friend's Big Walk game?", "answer": "Join the active friend game when it appears, or use the short Join Code generated by the host. Mac App Store players should use the code because Game Center is not supported." },
+      { "question": "Does Big Walk have random matchmaking?", "answer": "No. Big Walk is built around arranged groups rather than random matchmaking. Choose a host, invite your group, and use the in-game voice or text chat." },
+      { "question": "How many players can join Big Walk?", "answer": "Big Walk supports cooperative groups of 2 to 12 players according to the official game information." }
+    ] },
+    "closingCta": { "title": "", "description": "", "primary": "", "secondary": "" }
+  },
+  "footer": { "community": "Community", "legal": "Legal", "playGame": "Official Big Walk", "about": "About", "faq": "FAQ", "privacyPolicy": "Privacy Policy", "termsOfService": "Terms of Service", "copyright": "Copyright", "copyrightText": "© 2026 Big Walk Hub Wiki. Fan-made and not affiliated with the game developer." }
+}

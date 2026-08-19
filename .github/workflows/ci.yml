@@ -1,0 +1,65 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      # pnpm/action-setup installs pnpm WITHOUT running it, so it works
+      # even before Node is configured (uses the runner's default Node 24).
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.1.1
+          run_install: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Test
+        run: pnpm test
+
+      - name: Config consistency (nav/locale 3-place check)
+        run: pnpm check-config
+
+      - name: Build
+        run: pnpm build
+        env:
+          # FORKS: set a repository variable SITE_URL (Settings → Secrets and
+          # variables → Actions → Variables) to your domain — otherwise CI
+          # falls back to the demo domain and the built canonical/sitemap
+          # point at the wrong site (production builds use wrangler.toml,
+          # which this does not affect).
+          SITE_URL: ${{ vars.SITE_URL || 'https://anvilwiki.pages.dev' }}
+
+      - name: Content lint (H1/alt/slashes)
+        run: pnpm check-content
+
+      - name: Internal link audit (dist/)
+        run: pnpm check-links
+
+      - name: i18n coverage (report only)
+        run: pnpm check-i18n

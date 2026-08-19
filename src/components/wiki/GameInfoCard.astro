@@ -1,0 +1,22 @@
+---
+/** Structured game facts card for MDX guides. All display labels are supplied by the article. */
+interface Props {
+  heading: string;
+  game: string;
+  platforms: string[];
+  players: string;
+  genre: string;
+  labels: { game: string; platforms: string; players: string; genre: string };
+}
+const { heading, game, platforms, players, genre, labels } = Astro.props;
+---
+
+<aside class="not-prose mt-8 rounded-lg border border-border bg-card p-5">
+  <h2 class="text-lg font-bold">{heading}</h2>
+  <dl class="mt-4 grid gap-4 sm:grid-cols-2">
+    <div><dt class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{labels.game}</dt><dd class="mt-1 font-medium">{game}</dd></div>
+    <div><dt class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{labels.platforms}</dt><dd class="mt-1 flex flex-wrap gap-1">{platforms.map((platform) => <span class="rounded-md bg-muted px-2 py-1 text-sm">{platform}</span>)}</dd></div>
+    <div><dt class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{labels.players}</dt><dd class="mt-1 font-medium">{players}</dd></div>
+    <div><dt class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{labels.genre}</dt><dd class="mt-1 font-medium">{genre}</dd></div>
+  </dl>
+</aside>

@@ -1,0 +1,21 @@
+{
+  "name": "Big Walk Hub Wiki",
+  "short_name": "Big Walk Hub",
+  "description": "The Ultimate Big Walk Wiki & Guide.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1210",
+  "theme_color": "#1a9a73",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

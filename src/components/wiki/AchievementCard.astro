@@ -1,0 +1,14 @@
+---
+/** Reusable achievement data card. Values are editorial content, not UI copy. */
+interface Props { name: string; description: string; unlock: string; difficulty: string; labels: { description: string; unlock: string; difficulty: string }; }
+const { name, description, unlock, difficulty, labels } = Astro.props;
+---
+
+<section class="not-prose mt-5 rounded-lg border border-border bg-card p-5">
+  <h3 class="text-lg font-bold">{name}</h3>
+  <dl class="mt-4 grid gap-3 text-sm">
+    <div><dt class="font-semibold text-muted-foreground">{labels.description}</dt><dd class="mt-1">{description}</dd></div>
+    <div><dt class="font-semibold text-muted-foreground">{labels.unlock}</dt><dd class="mt-1">{unlock}</dd></div>
+    <div><dt class="font-semibold text-muted-foreground">{labels.difficulty}</dt><dd class="mt-1">{difficulty}</dd></div>
+  </dl>
+</section>

@@ -1,0 +1,15 @@
+---
+/** Accessible comparison table for platform availability and crossplay status. */
+interface Props { heading: string; columns: { platform: string; available: string; crossplay: string }; rows: Array<{ platform: string; available: string; crossplay: string }>; }
+const { heading, columns, rows } = Astro.props;
+---
+
+<section class="not-prose mt-8 overflow-hidden rounded-lg border border-border bg-card">
+  <h2 class="px-5 pt-5 text-lg font-bold">{heading}</h2>
+  <div class="overflow-x-auto p-5">
+    <table class="w-full min-w-[32rem] text-left text-sm">
+      <thead class="border-b border-border text-xs uppercase tracking-wider text-muted-foreground"><tr><th class="pb-3 pr-4">{columns.platform}</th><th class="pb-3 pr-4">{columns.available}</th><th class="pb-3">{columns.crossplay}</th></tr></thead>
+      <tbody>{rows.map((row) => <tr class="border-b border-border last:border-0"><td class="py-3 pr-4 font-medium">{row.platform}</td><td class="py-3 pr-4">{row.available}</td><td class="py-3">{row.crossplay}</td></tr>)}</tbody>
+    </table>
+  </div>
+</section>
